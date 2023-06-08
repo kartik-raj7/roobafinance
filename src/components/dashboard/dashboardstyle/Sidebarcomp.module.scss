@@ -1,0 +1,44 @@
+.sidebarstyle{
+    height:'100vh';
+}
+.sidebar{
+    display: flex;
+    // align-items: center;
+    flex-direction:row;
+}
+.searchdiv{
+    height:40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to top, #E17CFD, #4CD7F6);
+    color: #FFFFFF;
+    margin-right: 20px;
+    font-weight: 700;
+    font-size: 1rem;
+}
+.searchbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px;
+}
+.menuitems{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    // justify-content: center;
+    width: 100%;
+}
+.menu{
+    display: flex;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: space-between;
+    align-items: center;
+}
+.iconstyle{
+    margin-right: 10px;
+}
