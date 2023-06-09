@@ -1,0 +1,61 @@
+@import '../../../Color.scss';
+.project{
+    display: flex;
+    padding: 2px 20px;
+}
+.midpage{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.name{
+    font-size: 2rem;
+}
+.project{
+    display: flex;
+    align-items: center;
+}
+.question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 10px;
+    color:$primary-color;
+}
+.filters{
+    display: flex;
+
+}
+.filter{
+    padding: 12px 20px;
+    background-color: $background-color;
+    margin:0px 10px;
+    border-radius: 22px;
+    cursor: pointer;
+}
+.filtersel{
+    padding: 12px 20px;
+    background-color: $primary-color;
+    margin:0px 10px;
+    border-radius: 22px;
+    cursor: pointer;
+    color:white;
+}
+.datadisplay{
+    display: flex;
+    margin: 20px 30px;
+}
+.dashboardtiles{
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+}
+.leftsidetiles,.rightsidetiles{
+    display: flex;
+}
+// .chart{
+//     background-color: $background-color;
+//     padding: 10px;
+//     border-radius: 15px;
+// }

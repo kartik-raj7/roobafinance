@@ -41,4 +41,26 @@
 }
 .iconstyle{
     margin-right: 10px;
+    font-size: 1.4rem;
 }
+.menuitemstyle{
+  display: flex;
+  align-items: center;
+}
+.menuItem {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    transition: background-color 0.3s ease;
+  
+    &.active {
+      background-color: #f3f2fb;
+      color: #7166f9;
+      font-weight: bold;
+    }
+  
+    &:hover {
+      background-color: green!important;
+      cursor: pointer;
+    }
+  }

@@ -1,0 +1,50 @@
+.topbar{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+.left,.right{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+.left{
+    // padding: 20px;
+}
+.emojiback{
+    height: 40px;
+    width: 40px;
+    background-color: #f6f6fb;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.teamname{
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    margin-left: 10px;
+}
+.dropdown{
+    height: 20px;
+    width: 20px;
+    background-color: #f6f6fb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 10px;
+}
+.addbtn{
+  color: #7166f9;
+  margin-left: 10px;
+  font-size: 1.5rem;
+}
+.emoji{
+    height: 30px;
+    width: 30px;
+}
+.emojiuser{
+    height: 40px;
+    width: 45px;
+}

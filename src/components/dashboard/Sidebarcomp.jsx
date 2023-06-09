@@ -7,8 +7,10 @@ import {BsFillBookmarkFill} from 'react-icons/bs';
 import {RiLogoutBoxRFill} from 'react-icons/ri'
 import {IoSettingsSharp} from 'react-icons/io5'
 import HelpIcon from '@mui/icons-material/Help';
+import {IoMdHelpCircle} from 'react-icons/io'
 import {BsSearch} from 'react-icons/bs'
 import styles from './dashboardstyle/Sidebarcomp.module.scss'
+import { useState } from 'react';
 const Sidebarcomp = ({children}) => {
   const sidebarstyle={
     height:'100vh',
@@ -16,10 +18,23 @@ const Sidebarcomp = ({children}) => {
   }
   const menuitemstyles={
     display:'flex',
-    justifyContent:'center',
+    // justifyContent:'center',
     alignItems:'center'
 
   }
+  const menuItem={
+    
+  }
+  const activeMenuItem = {
+    backgroundColor: '#f3f2fb',
+    color: '#7166f9',
+    fontWeight: 'bold',
+    borderRight:'6px solid #7166f9'
+  };
+  function setActive(value){
+    setselectmenuitem(value);
+  }
+  const [selectmenuitem,setselectmenuitem] = useState('overview')
   return (
     <div>
     <div className={styles.sidebar}>
@@ -38,17 +53,17 @@ const Sidebarcomp = ({children}) => {
         
        <div className={styles.menuitems}>
        
-       <MenuItem ><FaHome className={styles.iconstyle}/>Overview</MenuItem>
-       <MenuItem><FaFire className={styles.iconstyle}/>Opportunities</MenuItem>
-       <MenuItem><FaUserAlt className={styles.iconstyle}/>My Competitors</MenuItem>
-       <MenuItem><IoDocumentText className={styles.iconstyle}/>Briefs</MenuItem>
-       <MenuItem><BsFillBookmarkFill className={styles.iconstyle}/>Saved</MenuItem>
+       <MenuItem onClick={()=>setActive('overview')}rootStyles={selectmenuitem==='overview' ? activeMenuItem : menuItem} icon={<FaHome className={styles.iconstyle}/>}>Overview</MenuItem>
+       <MenuItem onClick={()=>setActive('opportunities')}rootStyles={selectmenuitem==='opportunities' ? activeMenuItem : menuItem}icon={<FaFire className={styles.iconstyle}/>}>Opportunities</MenuItem>
+       <MenuItem onClick={()=>setActive('competitors')}rootStyles={selectmenuitem==='competitors' ? activeMenuItem : menuItem}icon={<FaUserAlt className={styles.iconstyle}/>}>My Competitors</MenuItem>
+       <MenuItem onClick={()=>setActive('briefs')}rootStyles={selectmenuitem==='briefs' ? activeMenuItem : menuItem}icon={<IoDocumentText className={styles.iconstyle}/>}>Briefs</MenuItem>
+       <MenuItem onClick={()=>setActive('saved')}rootStyles={selectmenuitem==='saved' ? activeMenuItem : menuItem}icon={<BsFillBookmarkFill className={styles.iconstyle}/>}>Saved</MenuItem>
        
        </div>
        <div className={styles.menuitems}>
-       <MenuItem><IoSettingsSharp className={styles.iconstyle}/>Settings</MenuItem>
-       <MenuItem><HelpIcon className={styles.iconstyle}/>Help</MenuItem>
-       <MenuItem><RiLogoutBoxRFill className={styles.iconstyle}/>Logout</MenuItem>
+       <MenuItem icon={<IoSettingsSharp className={styles.iconstyle}/>}>Settings</MenuItem>
+       <MenuItem icon={<IoMdHelpCircle className={styles.iconstyle}/>}>Help</MenuItem>
+       <MenuItem icon={<RiLogoutBoxRFill className={styles.iconstyle}/>}>Logout</MenuItem>
        
        </div>
        </div>

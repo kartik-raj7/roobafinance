@@ -1,0 +1,28 @@
+@import '../../../Color.scss';
+.left,.right{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.data{
+    display: flex;
+    flex-direction: column;
+}
+.dashboardtile{
+    margin: 10px;
+    border-radius: 20px;
+    height: 150px;
+    width: 200px;
+    background-color: $background-color;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.icon{
+    color:$primary-color;
+    font-size: 1.5rem;
+}
+.title{
+    font-size: 2rem;
+}
