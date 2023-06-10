@@ -28,17 +28,18 @@ const Midpage = () => {
     </div>
     <div className={styles.datadisplay}>
     <div className={styles.chart}>
+    <div className={styles.title}>
+    <h3>Total Visits</h3>
+    <h2 className={styles.titleviews}>42,43M</h2>
+    </div>
      <ChartComponent data={data}/>
      </div>
      <div className={styles.dashboardtiles}>
-     <div className={styles.leftsidetiles}>
-        <Dashboardtile icon={'chart'} help={'help'}/>
-        <Dashboardtile icon={'calendar'} help={'help'}/>
-     </div>
-     <div className={styles.rightsidetiles}>
-     <Dashboardtile icon={'user'} />
-        <Dashboardtile icon={'time'}/>
-     </div>
+        <div className={styles.dashboardtilediv}><Dashboardtile icon={'chart'} help={'help'} grow={'up'} percentage={'4%'} numbers={'4234%'} heading={'Bounce rate'}/></div>
+        <div className={styles.dashboardtilediv}><Dashboardtile icon={'calendar'} help={'help'}  numbers={'4234%'} heading={'Pages per visit'}/></div>
+        <div className={styles.dashboardtilediv}><Dashboardtile icon={'user'} grow={'down'} percentage={'2.1%'} numbers={'326.60K'} heading={'Total monthly visit'}/></div>
+        <div className={styles.dashboardtilediv}><Dashboardtile icon={'time'} grow={'down'} percentage={'2.1%'} numbers={'time'} heading={'Average Visit Duration'}/></div>
+     
     </div>
     </div>
     </div>

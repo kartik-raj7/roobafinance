@@ -13,7 +13,12 @@ import styles from './dashboardstyle/Sidebarcomp.module.scss'
 import { useState } from 'react';
 const Sidebarcomp = ({children}) => {
   const sidebarstyle={
-    height:'100vh',
+  top: 0,
+  left: 0,
+  bottom: 0,
+  height:'100vh',
+  width: '100px', // Adjust the width as needed
+  background: '#f2f2f2',
    
   }
   const menuitemstyles={
