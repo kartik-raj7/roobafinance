@@ -6,8 +6,8 @@ const data = {
           label: 'Visitors',
           data: [27000000,21000000,27000000, 34000000, 27000000, 31000000, 34000000,24000033,28000000],
           // you can set indiviual colors for each bar
-          borderColor: 'rgb(205,125,125)',
-          borderWidth: 1,
+          borderColor: '#af91fc',
+          borderWidth: 3,
         }
     ]
 }

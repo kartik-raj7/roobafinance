@@ -12,8 +12,9 @@ function LineChart({ chartData }) {
           },
           elements: {
             line: {
-              borderColor: "rgb(75, 192, 192)", 
-              tension: 0.3,
+              borderColor: "#af91fc !important", 
+              backgroundColor:'#af91fc',
+              tension: 0.4,
               borderJoinStyle: "round",
             },
             point:{

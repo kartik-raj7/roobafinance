@@ -19,7 +19,13 @@
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-   
+}
+.dashboardtile:hover{
+        background:     linear-gradient(to left top, rgba(193, 143, 251, 255), rgba(112, 193, 247,255), rgba(193, 143, 251, 255) );
+        color: white !important;
+}
+.dashboardtile:hover .icon{
+    color: white;
 }
 .icon{
     color:$primary-color;
