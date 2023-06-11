@@ -1,85 +1,83 @@
-@import '../../../Color.scss';
-.project{
-    display: flex;
-    padding: 2px 20px;
+@import "../../../Color.scss";
+.project {
+  display: flex;
+  padding: 2px 20px;
 }
-.midpage{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.midpage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.name{
-    font-size: 2rem;
+.name {
+  font-size: 2rem;
 }
-.project{
-    display: flex;
-    align-items: center;
+.project {
+  display: flex;
+  align-items: center;
 }
-.question{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 1.5rem;
-    margin-left: 10px;
-    color:$primary-color;
+.question {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  margin-left: 10px;
+  color: $primary-color;
 }
-.filters{
-    display: flex;
-
+.filters {
+  display: flex;
 }
-.filter{
-    padding: 12px 20px;
-    background-color: $background-color;
-    margin:0px 10px;
-    border-radius: 22px;
-    cursor: pointer;
+.filter {
+  padding: 12px 20px;
+  background-color: $background-color;
+  margin: 0px 10px;
+  border-radius: 22px;
+  cursor: pointer;
 }
-.filtersel{
-    padding: 12px 20px;
-    background-color: $primary-color;
-    margin:0px 10px;
-    border-radius: 22px;
-    cursor: pointer;
-    color:white;
+.filtersel {
+  padding: 12px 20px;
+  background-color: $primary-color;
+  margin: 0px 10px;
+  border-radius: 22px;
+  cursor: pointer;
+  color: white;
 }
-.datadisplay{
-    display: flex;
-    margin: 10px 30px;
+.datadisplay {
+  display: flex;
+  margin: 10px 30px;
 }
-.dashboardtiles{
-    display: flex;
-    // flex-direction: column;
-    flex-wrap: wrap;
-    margin-left: 40px;
-    width: 50%;
-   
+.dashboardtiles {
+  display: flex;
+  // flex-direction: column;
+  flex-wrap: wrap;
+  margin-left: 40px;
+  width: 50%;
 }
-.dashboardtilediv{
-    width:48%;
-    height:48%;
-  
+.dashboardtilediv {
+  width: 48%;
+  height: 48%;
 }
 // .leftsidetiles,.rightsidetiles{
 //     display: flex;
 //     width: 100%;
 //     // flex-wrap: wrap;
 // }
-.chart{
-    background-color: $background-color;
-    padding: 10px;
-    border-radius: 15px;
-    width: 50%;
+.chart {
+  background-color: $background-color;
+  padding: 10px;
+  border-radius: 15px;
+  width: 50%;
 }
-.title{
-    display:flex;
-    justify-content:space-between;
-    padding:20px
+.title {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
 }
-.titleviews{
-    color: $primary-color;
+.titleviews {
+  color: $primary-color;
+  font-weight: 500;
 }
 .gridContainer {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
-    grid-gap: 10px; /* Adjust the gap between tiles as needed */
-  }
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two columns with equal width */
+  grid-gap: 10px; /* Adjust the gap between tiles as needed */
+}

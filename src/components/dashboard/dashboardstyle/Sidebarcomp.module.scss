@@ -1,66 +1,67 @@
-.sidebarstyle{
-    height:'100vh';
+.sidebarstyle {
+  height: "100vh";
 }
-.sidebar{
-    display: flex;
-    // align-items: center;
-    flex-direction:row;
+.sidebar {
+  display: flex;
+  // align-items: center;
+  flex-direction: row;
 }
-.searchdiv{
-    height:40px;
-    width: 40px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(to top, #E17CFD, #4CD7F6);
-    color: #FFFFFF;
-    margin-right: 20px;
-    font-weight: 700;
-    font-size: 1rem;
+.searchdiv {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(to top, #e17cfd, #4cd7f6);
+  color: #ffffff;
+  margin-right: 20px;
+  font-weight: 700;
+  font-size: 1rem;
+  cursor: pointer;
 }
-.searchbar{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 20px;
+.searchbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 20px;
 }
-.menuitems{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    // justify-content: center;
-    width: 100%;
+.menuitems {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  // justify-content: center;
+  width: 100%;
 }
-.menu{
-    display: flex;
-    flex-direction: column;
-    height: 70vh;
-    justify-content: space-between;
-    align-items: center;
+.menu {
+  display: flex;
+  flex-direction: column;
+  height: 70vh;
+  justify-content: space-between;
+  align-items: center;
 }
-.iconstyle{
-    margin-right: 10px;
-    font-size: 1.4rem;
+.iconstyle {
+  margin-right: 10px;
+  font-size: 1.4rem;
 }
-.menuitemstyle{
+.menuitemstyle {
   display: flex;
   align-items: center;
 }
 .menuItem {
-    display: flex;
-    align-items: center;
-    padding: 8px;
-    transition: background-color 0.3s ease;
-  
-    &.active {
-      background-color: #f3f2fb;
-      color: #7166f9;
-      font-weight: bold;
-    }
-  
-    &:hover {
-      background-color: green!important;
-      cursor: pointer;
-    }
+  display: flex;
+  align-items: center;
+  padding: 8px;
+  transition: background-color 0.3s ease;
+
+  &.active {
+    background-color: #f3f2fb;
+    color: #7166f9;
+    font-weight: bold;
   }
+
+  &:hover {
+    background-color: green !important;
+    cursor: pointer;
+  }
+}
